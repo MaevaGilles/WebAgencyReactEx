@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: 'IBM Plex Sans JP', sans-serif;  
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/bgdark.jpg);
+    background-size: cover;
+    
+
+}
+    
+h1 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+  .navbar {
+position: top-absolute;
+padding: 50px;
+display: flex;
+justify-content: space-between;
+width: 100%;  
+box-sizing: border-box;
+align-items: center;
+    a {
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+       
+        }
+    .logo{
+        font-size: xx-large;
+        font-family: 'Pacifico', cursive;align-items: center;
+    }
+
+    ul {
+        display: flex;
+        
+    
+        li{
+            margin: 0 25;
+            
+       
+        }
+
+    }
+    .active{
+        color: red;
+    
+        } 
+        
+.menu-burger{
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+@media screen and (max-width:900px){
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    
+    .menu-burger{ 
+        display: block;
+        
+    }
+    .menusimple {
+    position: absolute;
+    align-items: center;
+    background-color: rgba(7, 26, 58, 0.718);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left:0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    }
+    ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin: 25px 0;
+    }
+    li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+
+    
+    
+    
+}
+
+}
+  
